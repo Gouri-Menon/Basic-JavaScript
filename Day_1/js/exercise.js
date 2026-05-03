@@ -1,3 +1,15 @@
+const name="gouri";
+const college="Sree buddha";
+const favSub="maths";
+const build="game";
+
+console.log(name,college,favSub,build);
+
+let currentMood ="focused";
+console.log(currentMood);
+currentMood= "curious";
+console.log(currentMood);
+
 /*Declare at least 5 variables that tell a mini-story (can be fictional). Every variable should have a single-line
 comment explaining what it represents.*/
 
