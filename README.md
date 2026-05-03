@@ -1,1 +1,1 @@
-# Basic-JavaScript
+# Basic-JavaScript-Traning
