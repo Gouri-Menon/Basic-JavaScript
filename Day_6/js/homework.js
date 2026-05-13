@@ -1,28 +1,24 @@
-//Write a function kmToMiles(km) — formula km * 0.621.
-const kmToMiles = function(km){
-  return km*0.621;
+function kmToMiles(km) {
+    return km * 0.621;
 }
-const result = kmToMiles(52);
-console.log(result);
 
-//Write a function gstAmount(price, rate = 18) returning the tax amount.
-
-function gstAmount(price, rate = 18){
-  return price* (rate/100);
+function gstAmount(price, rate = 18) {
+    return price * (rate / 100);
 }
-console.log(`Tax amount: ${gstAmount(100)}`);
 
-//Write a function fullName(first, last) returning the full name as one string.
-const fullName = (first,last)=> first+" "+last;
-console.log(fullName("gouri","menon"));
+document.querySelector("#homeworkOut1").textContent =
+    "kmToMiles(10)     → " +
+    kmToMiles(10) +
+    "\n" +
+    "kmToMiles(100)    → " +
+    kmToMiles(100);
 
-//Write a function isAdult(age) returning true/false.
-function isAdult(age){
-  if(age>=18){
-    return true;
-  }else{
-    return false;
-  }
-}
-console.log(isAdult(40));
-console.log(isAdult(10));
+document.querySelector("#homeworkOut2").textContent =
+    "gstAmount(1000)       → " +
+    gstAmount(1000) +
+    "   (18% default)\n" +
+    "gstAmount(1000, 12)   → " +
+    gstAmount(1000, 12);
+
+console.log(kmToMiles(10), kmToMiles(100));
+console.log(gstAmount(1000), gstAmount(1000, 12));
